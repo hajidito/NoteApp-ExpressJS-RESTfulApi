@@ -19,7 +19,7 @@ DB_NAME = simplenote
 PORT = 3000
 ```
 
-1. Install Dependencies
+###1. Install Dependencies
 ``` bash
 npm install
 npm install --save express mysql body-parser
@@ -28,7 +28,7 @@ npm install --save cors
 npm install dotenv --save
 ```
 
-2. Run Server
+###2. Run Server
 ``` bash
 nodemon server.js
 ```
