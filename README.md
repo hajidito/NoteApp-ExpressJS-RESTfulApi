@@ -28,7 +28,7 @@ npm install --save cors
 npm install dotenv --save
 ```
 
-``` bash
 2. Run Server
+``` bash
 nodemon server.js
 ```
