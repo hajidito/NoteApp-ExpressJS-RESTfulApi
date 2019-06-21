@@ -16,8 +16,8 @@ exports.showNotes = function(req, res) {
     let sort = req.query.sort || 'desc';
     
     //variable for pagination
-    let page = req.query.page || 1;
-    let limit = req.query.limit || 10;
+    let page = parseInt(req.query.page) || 1;
+    let limit = parseInt(req.query.limit) || 10;
     let offset = ((page * limit) - limit);
     
     //variable for info pagination
@@ -25,7 +25,7 @@ exports.showNotes = function(req, res) {
     let totalPage;
     
     //query search, sort, pagination
-    let query = `SELECT b.*, c.name as "categoryName", c.description as "categoryDescription" 
+    let query = `SELECT b.id, b.title, b.note, b.time, c.name as "categoryName" 
     FROM notes b join category c on (b.id_category=c.id) 
     where b.title like '%${search}%' order by time ${sort} limit ${limit} offset ${offset}`
     
@@ -38,9 +38,9 @@ exports.showNotes = function(req, res) {
     
     //for search by id note with parameter in url
     if (noteId != null){
-        connection.query('SELECT * FROM notes where id = ?',
-        [ noteId ], 
-        function (error, rows, fields){
+        connection.query(`SELECT b.id, b.title, b.note, b.time, c.name as "categoryName" 
+        FROM notes b join category c on (b.id_category=c.id) 
+        where b.id = ${noteId}`, function (error, rows, fields){
             if(error){
                 console.log(error)
             } else{
