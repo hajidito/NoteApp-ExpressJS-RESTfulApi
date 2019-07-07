@@ -12,9 +12,9 @@
 * Make .env file on this project
 * Open .env file and copy paste this code below
 ``` bash
-DB_HOST = localhost
-DB_USER = root
-DB_PASSWORD = 
+DB_HOST = yourDBHOST
+DB_USER = yourDBUSER
+DB_PASSWORD = yourDBPASSWORD
 DB_NAME = simplenote
 PORT = 3000
 ```
