@@ -1,4 +1,5 @@
-# simpleNoteApp-restfulApi
+# NoteApp-ExpressJS-RESTfulApi
+
 ## Built With
 
 * [NodeJS](https://nodejs.org/en/docs/)
@@ -22,10 +23,6 @@ PORT = 3000
 ### 1. Install Dependencies
 ``` bash
 npm install
-npm install --save express mysql body-parser
-npm install -g daemon
-npm install --save cors
-npm install dotenv --save
 ```
 
 ### 2. Run Server
