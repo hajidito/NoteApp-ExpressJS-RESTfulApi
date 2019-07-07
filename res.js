@@ -9,8 +9,19 @@ exports.ok = function(values, res) {
     res.end();
 };
 
+exports.delete = function(values, res, id) {
+    var data = {
+        'status': 200,
+        'values': values,
+        'id' : id
+    };
+    res.json(data);
+    res.end();
+};
+
+
 //function for show info total data in pagination
-exports.ok2 = function(totalData,page,totalPage,limit,value,res){
+exports.pagination = function(totalData,page,totalPage,limit,value,res){
     const data = {
         status : 200,
         data : value,

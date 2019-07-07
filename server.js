@@ -9,7 +9,7 @@ const cors = require('cors');
 
 //cors
 //chrome extension for postman
-let whitelist = ['chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+const whitelist = ['chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
 'http://192.168.100.49',
 'http://192.168.100.24', 
 'http://192.168.100.82']
@@ -24,14 +24,16 @@ let corsOptions = {
     }
 }
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 //middleware for show information about user who request to this server 
 const logger = function(req, res, next){
+    console.log('==============================')
     console.log('Request URL:', req.originalUrl)
     console.log("Request type: " + req.method)
     console.log("Request device: " + req.get('User-Agent'))
-    console.log("Logged, time: " + new Date())
+    console.log("Request time: " + new Date())
+    console.log('==============================')
     next()
 }
 

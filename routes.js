@@ -5,18 +5,24 @@ module.exports = function(app) {
 
     app.get('/',todoList.index);
 
-    //route for notes
+    //get notes
     app.get('/notes',todoList.showNotes);
     app.get('/notes/:noteId',todoList.showNotes);
+    //create note
     app.post('/note',todoList.createNote);
-    app.patch('/note',todoList.updateNote);
-    app.delete('/note',todoList.deleteNote);
+    //update note
+    app.patch('/note/:noteId',todoList.updateNote);
+    //delete note
+    app.delete('/note/:noteId',todoList.deleteNote);
     
-    //route for category
+    //get categories
     app.get('/categories',todoList.showCategories);
     app.get('/categories/:categoryId',todoList.showCategories);
+    //create category
     app.post('/category',todoList.createCategory);
-    app.patch('/category',todoList.updateCategory);
-    app.delete('/category',todoList.deleteCategory);
+    //update category
+    app.patch('/category/:categoryId',todoList.updateCategory);
+    //delete category
+    app.delete('/category/:categoryId',todoList.deleteCategory);
 
 };
