@@ -24,7 +24,7 @@ let corsOptions = {
     }
 }
 
-// app.use(cors(corsOptions));
+app.use(cors(corsOptions));
 
 //middleware for show information about user who request to this server 
 const logger = function(req, res, next){
