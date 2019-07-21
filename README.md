@@ -19,6 +19,8 @@ DB_PASSWORD = yourDBPASSWORD
 DB_NAME = simplenote
 PORT = 3000
 ```
+### Create Database
+* Import Database  [simplenote] (https://github.com/hajidito/NoteApp-ExpressJS-RESTfulApi/tree/master/database) into your MySQL
 
 ### 1. Install Dependencies
 ``` bash
