@@ -9,6 +9,9 @@
 * [dotenv](https://www.npmjs.com/package/dotenv)
 * [MySQL](https://expressjs.com/en/guide/database-integration.html#mysql)
 
+### Create Database
+* Import Database  [simplenote](https://github.com/hajidito/NoteApp-ExpressJS-RESTfulApi/tree/master/database) into your MySQL
+
 ### Configuration Environment Variables
 * Make .env file on this project
 * Open .env file and copy paste this code below
@@ -19,8 +22,6 @@ DB_PASSWORD = yourDBPASSWORD
 DB_NAME = simplenote
 PORT = 3000
 ```
-### Create Database
-* Import Database  [simplenote](https://github.com/hajidito/NoteApp-ExpressJS-RESTfulApi/tree/master/database) into your MySQL
 
 ### 1. Install Dependencies
 ``` bash
