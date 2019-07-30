@@ -1,5 +1,11 @@
 # NoteApp-ExpressJS-RESTfulApi
 
+## Introduction
+[![Node.js](https://img.shields.io/badge/Node.js-v.10.16-green.svg?style=rounded-square)](https://nodejs.org/)
+[![Express.js](https://img.shields.io/badge/Express.js-4.0.1-blue.svg?style=rounded-square)](http://expressjs.com/)
+
+Here is my new repository which builded with NodeJS and ExpressJS Framework for making the backend side and API for application [NoteApp-ReactNative-Redux](https://github.com/hajidito/NoteApp-ReactNative-Redux) .
+
 ## Built With
 
 * [NodeJS](https://nodejs.org/en/docs/)
